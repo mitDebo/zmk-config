@@ -98,8 +98,8 @@ display-name= "NUM"                               ;
 // ╷           ╷           ╷           ╷           ╷             ╷              ╷   ╷            ╷           ╷           ╷           ╷            ╷           ╷
 
                 &none      &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &kp KP_MULTIPLY    &kp KP_PLUS  &kp KP_N7   &kp KP_N8   &kp KP_N9   &none
-                &none      &none       &kp C_BRI_DN &kp C_BRI_UP &kp KP_DIVIDE      &kb KP_MINUS &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_COMMA
-    &kp CAPS    &none      &none       &none        &none        &kp KP_LPAR        &kb KP_RPAR  &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &kp KP_NUM         
+                &none      &none       &kp C_BRI_DN &kp C_BRI_UP &kp KP_DIVIDE      &kp KP_MINUS &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_COMMA
+    &kp CAPS    &none      &none       &none        &none        &kp KP_LPAR        &kp KP_RPAR  &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &kp KP_NUM         
                                        &trans       &trans       &trans             &kp KP_EQUAL &kp KP_N0   &trans      
                         >;
                 };
