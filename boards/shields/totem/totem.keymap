@@ -86,21 +86,21 @@ display-name= "SYM"                              ;
 display-name= "NUM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃  C_MUTE   ┃  C_VOL_DN ┃  C_VOL_UP ┃           ┃   ┃           ┃     7     ┃     8     ┃     9     ┃           ┃
+//             ┃           ┃  C_MUTE   ┃  C_VOL_DN ┃  C_VOL_UP ┃     *     ┃   ┃     +     ┃     7     ┃     8     ┃     9     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃  C_BRI_DN ┃  C_BRI_UP ┃           ┃   ┃           ┃     4     ┃     5     ┃     6     ┃           ┃
+//             ┃           ┃           ┃  C_BRI_DN ┃  C_BRI_UP ┃     /     ┃   ┃     -     ┃     4     ┃     5     ┃     6     ┃     ,     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   CAPS    ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     1     ┃     2     ┃     3     ┃           ┃  KP_NUM   ┃
+// ┃   CAPS    ┃           ┃           ┃           ┃           ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     .     ┃  KP_NUM   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃     0     ┃           ┃
+//                                     ┃           ┃           ┃           ┃   ┃     =     ┃     0     ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+// ╷           ╷           ╷           ╷           ╷             ╷              ╷   ╷            ╷           ╷           ╷           ╷            ╷           ╷
 
-                &none      &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &none          &none      &kp KP_N7   &kp KP_N8   &kp KP_N9   &none
-                &none      &none       &kp C_BRI_DN &kp C_BRI_UP &none          &none      &kp KP_N4   &kp KP_N5   &kp KP_N6   &none
-    &trans      &none      &none       &none        &none        &none          &none      &kp KP_N1   &kp KP_N2   &kp KP_N3   &none       &kp KP_NUM         
-                                       &trans       &trans       &trans         &trans     &kp KP_N0   &trans      
+                &none      &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &kp KP_MULTIPLY    &kp KP_PLUS  &kp KP_N7   &kp KP_N8   &kp KP_N9   &none
+                &none      &none       &kp C_BRI_DN &kp C_BRI_UP &kp KP_DIVIDE      &kb KP_MINUS &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_COMMA
+    &kp CAPS    &none      &none       &none        &none        &kp KP_LPAR        &kb KP_RPAR  &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &kp KP_NUM         
+                                       &trans       &trans       &trans             &kp KP_EQUAL &kp KP_N0   &trans      
                         >;
                 };
 
