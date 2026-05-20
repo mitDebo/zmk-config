@@ -47,10 +47,10 @@ display-name= "BASE"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 
-               &kp Q       &kp W       &kp F        &kp P        &kp B           &kp J       &kp L         &kp U        &kp Y       &kp SEMI
-               &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G           &kp M       &mt RSHFT N   &mt RCTRL E  &mt RALT I  &mt RGUI O
-    &kp GRAVE  &kp Z       &kp X       &kp C        &kp D        &kp V           &kp K       &kp H         &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                                       &lt NUM ESC  &lt SYM TAB  &kp SPACE       &kp RET     &lt SYM BSPC  &lt FUNC DEL
+                  &kp Q       &kp W       &kp F        &kp P        &kp B           &kp J       &kp L         &kp U        &kp Y       &kp SEMI
+                  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G           &kp M       &mt RSHFT N   &mt RCTRL E  &mt RALT I  &mt RGUI O
+    &lt SYM GRAVE &kp Z       &kp X       &kp C        &kp D        &kp V           &kp K       &kp H         &kp COMMA    &kp DOT     &kp FSLH    &lt SYM BSLH
+                                          &lt NUM ESC  &kp TAB      &kp SPACE       &kp RET     &kp BSPC      &lt FUNC DEL
                         >;
                 };
 
@@ -66,15 +66,15 @@ display-name= "SYM"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   PG-UP   ┃     =     ┃     -     ┃     '     ┃     [     ┃   ┃     ]     ┃     "     ┃     _     ┃     +     ┃   PG-DN   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    HOME   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃     (     ┃   ┃     )     ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃    END    ┃
+// ┃           ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃     (     ┃   ┃     )     ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃    END    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃    HOME   ┃           ┃           ┃   ┃           ┃           ┃     END   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp LBRC        &kp RBRC    &kp STAR    &kp AMPS    &kp CARET   &kp PRCNT
-                &kp PG_UP   &kp EQUAL   &kp MINUS   &kp APOS    &kp LBKT        &kp RBKT    &kp DQT     &kp UNDER   &kp PLUS    &kp PG_DN
-    &kp HOME    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp LPAR        &kp RPAR    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp END      
-                                        &trans      &trans      &trans          &trans      &trans      &trans    
+             &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp LBRC        &kp RBRC    &kp STAR    &kp AMPS    &kp CARET   &kp PRCNT
+             &kp PG_UP   &kp EQUAL   &kp MINUS   &kp APOS    &kp LBKT        &kp RBKT    &kp DQT     &kp UNDER   &kp PLUS    &kp PG_DN
+    &trans   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp LPAR        &kp RPAR    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp END      
+                                     &kp  HOME   &trans      &trans          &trans      &trans      &trans   
                         >;
                 };
 
